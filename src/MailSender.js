@@ -3,16 +3,16 @@ const nodemailer = require('nodemailer');
 class MailSender {
   constructor() {
     this._transporter = nodemailer.createTransport({
-      host: process.env.SMTP_HOST,
-      port: process.env.SMTP_PORT,
+      host: process.env.MAIL_HOST,
+      port: process.env.MAIL_PORT,
       auth: {
-        user: process.env.SMTP_USER,
-        pass: process.env.SMTP_PASSWORD,
+        user: process.env.MAIL_USER,
+        pass: process.env.MAIL_PASSWORD,
       },
-      pool: process.env.SMTP_POOL,
-      rateLimit: process.env.SMTP_RATE_LIMIT,
-      maxConnections: process.env.SMTP_MAX_CONNECTIONS,
-      maxMessages: process.env.SMTP_MAX_MESSAGES,
+      pool: process.env.MAIL_POOL,
+      rateLimit: process.env.MAIL_RATE_LIMIT,
+      maxConnections: process.env.MAIL_MAX_CONNECTIONS,
+      maxMessages: process.env.MAIL_MAX_MESSAGES,
     });
   }
 
