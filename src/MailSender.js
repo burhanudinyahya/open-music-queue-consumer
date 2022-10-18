@@ -9,6 +9,10 @@ class MailSender {
         user: process.env.SMTP_USER,
         pass: process.env.SMTP_PASSWORD,
       },
+      pool: process.env.SMTP_POOL,
+      rateLimit: process.env.SMTP_RATE_LIMIT,
+      maxConnections: process.env.SMTP_MAX_CONNECTIONS,
+      maxMessages: process.env.SMTP_MAX_MESSAGES,
     });
   }
 

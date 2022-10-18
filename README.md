@@ -14,4 +14,4 @@ This service always listen to RabbitMQ server as Consumer to generate JSON file 
 - NodeJS
 - RabbitMQ
 - PostgresQL
-- MailTrap
+- MailTrap (to Fix [Error: Data command failed: 550 5.7.0 Requested action not taken: too many emails per second](https://dorelljames.com/blog/solving-mailtraps-error-550-too-many-emails-per-second/))
